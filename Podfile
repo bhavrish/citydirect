@@ -6,6 +6,9 @@ target 'NacDirect' do
   use_frameworks!
 
   # Pods for NacDirect
+    pod 'Alamofire', '~> 4.7'
+    pod 'Parse'
+
 
   target 'NacDirectTests' do
     inherit! :search_paths
