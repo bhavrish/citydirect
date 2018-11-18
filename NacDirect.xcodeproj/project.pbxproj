@@ -15,8 +15,12 @@
 		4522F503219E26D40059138C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4522F501219E26D40059138C /* LaunchScreen.storyboard */; };
 		4522F50E219E26D40059138C /* NacDirectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522F50D219E26D40059138C /* NacDirectTests.swift */; };
 		4522F519219E26D40059138C /* NacDirectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522F518219E26D40059138C /* NacDirectUITests.swift */; };
+		4979F02821A0BA62001C5039 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4979F02721A0BA62001C5039 /* HomePageViewController.swift */; };
+		4979F02B21A0BAD3001C5039 /* FloorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4979F02A21A0BAD3001C5039 /* FloorCell.swift */; };
 		53A7F416E74C0A31ED6D3725 /* Pods_NacDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96B434B40B20FD1FE19E933 /* Pods_NacDirect.framework */; };
 		6E502103266003A5E8298844 /* Pods_NacDirectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8108CB35D3980A762C3D8A5 /* Pods_NacDirectTests.framework */; };
+		E587CCA7219FD1B900733593 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E587CCA6219FD1B900733593 /* LoginViewController.swift */; };
+		E5F181B6219FF38C00B05A48 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F181B5219FF38C00B05A48 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,12 +56,16 @@
 		4522F514219E26D40059138C /* NacDirectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NacDirectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4522F518219E26D40059138C /* NacDirectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NacDirectUITests.swift; sourceTree = "<group>"; };
 		4522F51A219E26D40059138C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4979F02721A0BA62001C5039 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		4979F02A21A0BAD3001C5039 /* FloorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorCell.swift; sourceTree = "<group>"; };
 		527F26B1837D5C3118AF5FEF /* Pods_NacDirectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NacDirectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D855C2648BDB07D0E8B17B2 /* Pods-NacDirect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NacDirect.release.xcconfig"; path = "Pods/Target Support Files/Pods-NacDirect/Pods-NacDirect.release.xcconfig"; sourceTree = "<group>"; };
 		A2E19DAE2F1F4E820D228A3F /* Pods-NacDirectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NacDirectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NacDirectUITests/Pods-NacDirectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A7A6512195F6E900FEB98098 /* Pods-NacDirect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NacDirect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NacDirect/Pods-NacDirect.debug.xcconfig"; sourceTree = "<group>"; };
 		A8108CB35D3980A762C3D8A5 /* Pods_NacDirectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NacDirectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D2E4794C97143EAEA41E5B /* Pods-NacDirectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NacDirectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NacDirectUITests/Pods-NacDirectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E587CCA6219FD1B900733593 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E5F181B5219FF38C00B05A48 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F96B434B40B20FD1FE19E933 /* Pods_NacDirect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NacDirect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,6 +122,8 @@
 		4522F4F7219E26D30059138C /* NacDirect */ = {
 			isa = PBXGroup;
 			children = (
+				4979F02921A0BA7C001C5039 /* TableViewCells */,
+				E5F181B2219FF29100B05A48 /* ViewControllers */,
 				4522F4F8219E26D30059138C /* AppDelegate.swift */,
 				4522F4FA219E26D40059138C /* ViewController.swift */,
 				4522F4FC219E26D40059138C /* Main.storyboard */,
@@ -142,6 +152,14 @@
 			path = NacDirectUITests;
 			sourceTree = "<group>";
 		};
+		4979F02921A0BA7C001C5039 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				4979F02A21A0BAD3001C5039 /* FloorCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
 		7B4C44B4FC620DB10BD85FD2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +181,16 @@
 				D8D2E4794C97143EAEA41E5B /* Pods-NacDirectUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E5F181B2219FF29100B05A48 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E587CCA6219FD1B900733593 /* LoginViewController.swift */,
+				E5F181B5219FF38C00B05A48 /* SignUpViewController.swift */,
+				4979F02721A0BA62001C5039 /* HomePageViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,8 +329,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NacDirect/Pods-NacDirect-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
@@ -310,8 +336,6 @@
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
@@ -327,15 +351,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-NacDirectTests-checkManifestLockResult.txt",
 			);
@@ -349,15 +369,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-NacDirect-checkManifestLockResult.txt",
 			);
@@ -371,15 +387,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-NacDirectUITests-checkManifestLockResult.txt",
 			);
@@ -395,7 +407,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4979F02B21A0BAD3001C5039 /* FloorCell.swift in Sources */,
+				E587CCA7219FD1B900733593 /* LoginViewController.swift in Sources */,
 				4522F4FB219E26D40059138C /* ViewController.swift in Sources */,
+				E5F181B6219FF38C00B05A48 /* SignUpViewController.swift in Sources */,
+				4979F02821A0BA62001C5039 /* HomePageViewController.swift in Sources */,
 				4522F4F9219E26D30059138C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

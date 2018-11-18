@@ -19,9 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Parse.initialize(
             with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
-                configuration.applicationId = "nacdirect"
-                configuration.clientKey = "auhefooa8w7heufisjdhf9q8hefoiahsdjfhalksjdfhla"  // set to nil assuming you have not set clientKey
-                configuration.server = "http://nacdirect.herokuapp.com/parse"
+                configuration.applicationId = "nac-direct"
+                configuration.clientKey = "iosfinalproject"  // set to nil assuming you have not set clientKey
+                configuration.server = "http://nac-direct.herokuapp.com/parse"
             })
         )
         
