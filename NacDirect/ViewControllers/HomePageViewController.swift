@@ -27,7 +27,7 @@ class HomePageViewController: UIViewController, UITableViewDataSource, UITableVi
     
     //Nummber of Rows
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10;
+        return 8;
     }
     
     //Contents for each cell 
