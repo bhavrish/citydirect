@@ -316,7 +316,7 @@
         <!--Update-->
         <scene sceneID="Wke-lu-Iz0">
             <objects>
-                <viewController title="Update" id="vMI-xr-Mxi" sceneMemberID="viewController">
+                <viewController title="Update" id="vMI-xr-Mxi" customClass="updateViewController" customModule="NacDirect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GIO-vt-aiV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -343,19 +343,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4CC-Ks-rWu">
-                                <rect key="frame" x="16" y="222" width="343" height="28"/>
+                                <rect key="frame" x="16" y="222" width="343" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="Escalator"/>
+                                    <segment title="Bathroom"/>
                                 </segments>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jZh-fU-qBV">
-                                <rect key="frame" x="16" y="550" width="343" height="28"/>
+                                <rect key="frame" x="16" y="550" width="343" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="East"/>
+                                    <segment title="West"/>
                                 </segments>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aP7-0B-TUc">
@@ -370,6 +370,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="updateOnTap:" destination="vMI-xr-Mxi" eventType="touchUpInside" id="Fq5-S7-mke"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Post Uploading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e92-ks-vIo">
                                 <rect key="frame" x="228" y="108" width="131" height="21"/>
@@ -382,6 +385,12 @@
                         <color key="backgroundColor" red="0.96385231599999999" green="0.90306826019999997" blue="0.82026188990000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Kcf-oF-Yvt"/>
                     </view>
+                    <connections>
+                        <outlet property="brokenSegControl" destination="4CC-Ks-rWu" id="pW0-II-KSc"/>
+                        <outlet property="floorField" destination="aP7-0B-TUc" id="ZTf-x7-WY8"/>
+                        <outlet property="postUploadingLabel" destination="e92-ks-vIo" id="995-sT-O8K"/>
+                        <outlet property="sideSegControl" destination="jZh-fU-qBV" id="mLg-50-UYv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6P7-EC-Vjw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
