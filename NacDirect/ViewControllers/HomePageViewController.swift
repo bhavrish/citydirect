@@ -39,11 +39,5 @@ class HomePageViewController: UIViewController, UITableViewDataSource, UITableVi
     
    
     
-    
-    
-    
-    
-    
-    
 }
 

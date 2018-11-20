@@ -286,7 +286,7 @@
         <!--Escalator-->
         <scene sceneID="bE3-sJ-kVg">
             <objects>
-                <viewController title="Escalator" id="s3K-TZ-fn5" sceneMemberID="viewController">
+                <viewController title="Escalator" id="s3K-TZ-fn5" customClass="escalatorViewController" customModule="NacDirect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w3B-mN-cJP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -382,6 +382,12 @@
                         <color key="backgroundColor" red="0.96385231599999999" green="0.90306826019999997" blue="0.82026188990000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="7vS-02-aA6"/>
                     </view>
+                    <connections>
+                        <outlet property="firstPic" destination="JuD-OR-aZC" id="Nat-CD-tpy"/>
+                        <outlet property="fourthPic" destination="Q6h-fT-D35" id="zLf-Ni-z0v"/>
+                        <outlet property="secondPic" destination="MdA-YP-kcr" id="m21-h0-f8S"/>
+                        <outlet property="thirdPic" destination="LB5-sO-7oD" id="tDi-30-3Ga"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5g1-bp-irD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -390,7 +396,7 @@
         <!--Bathroom-->
         <scene sceneID="vab-Jy-yvb">
             <objects>
-                <viewController title="Bathroom" id="TnH-oN-v2m" sceneMemberID="viewController">
+                <viewController title="Bathroom" id="TnH-oN-v2m" customClass="bathroomViewController" customModule="NacDirect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m1w-I1-qZZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -486,6 +492,12 @@
                         <color key="backgroundColor" red="0.96385231599999999" green="0.90306826019999997" blue="0.82026188990000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="928-EB-7Xo"/>
                     </view>
+                    <connections>
+                        <outlet property="firstPic" destination="Jtc-P2-DEo" id="isw-5t-CF9"/>
+                        <outlet property="fourthPic" destination="jr0-xr-G9L" id="byc-fw-ARp"/>
+                        <outlet property="secondPic" destination="MYg-XF-LeN" id="sIp-zs-bCt"/>
+                        <outlet property="thirdPic" destination="GYD-0t-OHx" id="bfa-s4-sxi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mgx-T1-8DD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
