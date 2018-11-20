@@ -33,7 +33,7 @@ class updateViewController: UIViewController {
         let brokenObects = ["Escalator","Bathroom"]
         let sides = ["East","West"]
         let obj = brokenObects[brokenSegControl.selectedSegmentIndex]
-        let side = brokenObects[sideSegControl.selectedSegmentIndex]
+        let side = sides[sideSegControl.selectedSegmentIndex]
         
         var updates = PFObject(className: "Updates")
         updates["floor_number"] = floornumber
