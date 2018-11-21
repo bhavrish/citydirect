@@ -36,16 +36,16 @@ class bathroomViewController: UIViewController {
         query.findObjectsInBackground { (posts, error) in
             if error == nil {
                 for post in posts! {
-                    if post["floor_number"] = 5 && post["side"] == "East" && post["gender"] == "Male" {
+                    if post["floor_number"] as? Int == 5 && post["side"] as? String == "East" && post["gender"] as? String == "Male" {
                         self.firsttotal += 1 //need to work on this part
                     }
-                    if post["floor_number"] = 5 && post["side"] == "West" && post["gender"] == "Female" {
+                    if post["floor_number"] as? Int == 5 && post["side"] as? String == "West" && post["gender"] as? String == "Female" {
                         self.secondtotal += 1 //need to work on this part
                     }
-                    if post["floor_number"] = 5 && post["side"] == "East" && post["gender"] == "Male" {
+                    if post["floor_number"] as? Int == 5 && post["side"] as? String == "East" && post["gender"] as? String == "Male" {
                         self.thirdtotal += 1 //need to work on this part
                     }
-                    if post["floor_number"] = 5 && post["side"] == "West" && post["gender"] == "Female" {
+                    if post["floor_number"] as? Int == 5 as? Int && post["side"] as? String == "West" && post["gender"] as? String == "Female" {
                         self.fourthtotal += 1 //need to work on this part
                     }
                 }

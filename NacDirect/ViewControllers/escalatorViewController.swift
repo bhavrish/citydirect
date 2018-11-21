@@ -37,16 +37,16 @@ class escalatorViewController: UIViewController {
         query.findObjectsInBackground { (posts, error) in
             if error == nil {
                 for post in posts! {
-                    if post["floor_number"] = 5 && post["side"] == "East" && post["direction"] == "Up" {
+                    if post["floor_number"] as? Int == 5 && post["side"] as? String == "East" && post["direction"] as? String == "Up" {
                         self.firsttotal += 1 //need to work on this part
                     }
-                    if post["floor_number"] = 5 && post["side"] == "West" && post["direction"] == "Down" {
+                    if post["floor_number"] as? Int == 5 && post["side"] as? String == "West" && post["direction"] as? String == "Down" {
                         self.secondtotal += 1 //need to work on this part
                     }
-                    if post["floor_number"] = 5 && post["side"] == "East" && post["direction"] == "Up" {
+                    if post["floor_number"] as? Int == 5 && post["side"] as? String == "East" && post["direction"] as? String == "Up" {
                         self.thirdtotal += 1 //need to work on this part
                     }
-                    if post["floor_number"] = 5 && post["side"] == "West" && post["direction"] == "Down" {
+                    if post["floor_number"] as? Int == 5 && post["side"] as? String == "West" && post["direction"] as? String == "Down" {
                         self.fourthtotal += 1 //need to work on this part
                     }
                 }
