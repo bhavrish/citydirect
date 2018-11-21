@@ -76,9 +76,6 @@
                                 <rect key="frame" x="122" y="603" width="123" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Homepage"/>
-                                <connections>
-                                    <segue destination="sPH-pd-gyK" kind="show" id="8MB-bc-xOP"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96385231599999999" green="0.9030682601539729" blue="0.82026188991243376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -89,8 +86,9 @@
                         <outlet property="loginButtonFrame" destination="xJn-zI-5RZ" id="BmK-TV-c3W"/>
                         <outlet property="passwordField" destination="WSI-PI-09H" id="kkn-8c-2hk"/>
                         <outlet property="usernameField" destination="Iud-xx-QoE" id="tSQ-D5-BuU"/>
-                        <segue destination="nGE-Gd-TDY" kind="show" identifier="LogInSegue" id="uXR-7Y-LLY"/>
+                        <segue destination="nGE-Gd-TDY" kind="show" identifier="AdminSegue" id="uXR-7Y-LLY"/>
                         <segue destination="wgD-MC-tw1" kind="show" identifier="SignUpSegue" id="oWj-gg-1BN"/>
+                        <segue destination="cij-Fm-q1e" kind="show" identifier="HomePageSegue" id="u0M-vY-drd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -188,18 +186,83 @@
             </objects>
             <point key="canvasLocation" x="1956" y="571.92118226600985"/>
         </scene>
-        <!--View Controller-->
+        <!--Admin View Controller-->
         <scene sceneID="i2d-oQ-wKz">
             <objects>
-                <viewController id="nGE-Gd-TDY" sceneMemberID="viewController">
+                <viewController id="nGE-Gd-TDY" customClass="AdminViewController" customModule="NacDirect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="In9-uh-hg5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What has been fixed?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENk-UI-XSI">
+                                <rect key="frame" x="15" y="169" width="307" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
+                                <color key="textColor" red="0.42370863060000002" green="0.405097757" blue="0.64946859140000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Which floor?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQD-jl-dmj">
+                                <rect key="frame" x="15" y="337" width="178" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
+                                <color key="textColor" red="0.42370863060000002" green="0.405097757" blue="0.64946859140000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Which side of building?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6w4-78-pdi">
+                                <rect key="frame" x="16" y="497" width="328" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
+                                <color key="textColor" red="0.42370863060000002" green="0.405097757" blue="0.64946859140000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DXx-4R-PIb">
+                                <rect key="frame" x="16" y="231" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Escalator"/>
+                                    <segment title="Bathroom"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zTN-FX-pea">
+                                <rect key="frame" x="16" y="559" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="East"/>
+                                    <segment title="West"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aL8-KY-Ut8">
+                                <rect key="frame" x="15" y="387" width="329" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGI-UR-5mh">
+                                <rect key="frame" x="148" y="654" width="80" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="updateOnTap:" destination="nGE-Gd-TDY" eventType="touchUpInside" id="bPQ-44-377"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Post Uploading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaS-mM-QT6">
+                                <rect key="frame" x="228" y="117" width="131" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.42370863060000002" green="0.405097757" blue="0.64946859140000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.96385231599999999" green="0.90306826019999997" blue="0.82026188990000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="oUM-x1-5iD"/>
                     </view>
                     <connections>
-                        <segue destination="sPH-pd-gyK" kind="show" identifier="homeSegue" id="qhT-fH-3IZ"/>
+                        <outlet property="fixedSegControl" destination="DXx-4R-PIb" id="JJi-l2-GSl"/>
+                        <outlet property="floorField" destination="aL8-KY-Ut8" id="mDf-am-zcE"/>
+                        <outlet property="postUploadingLabel" destination="jaS-mM-QT6" id="iNe-Qb-KK9"/>
+                        <outlet property="sideSegControl" destination="zTN-FX-pea" id="zrh-ci-Vk5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gGM-Wj-Qw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -628,6 +691,6 @@
         <image name="escalator-image" width="2048" height="2048"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8MB-bc-xOP"/>
+        <segue reference="u0M-vY-drd"/>
     </inferredMetricsTieBreakers>
 </document>

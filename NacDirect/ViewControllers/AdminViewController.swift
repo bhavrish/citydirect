@@ -1,28 +1,28 @@
 //
-//  updateViewController.swift
+//  AdminViewController.swift
 //  NacDirect
 //
-//  Created by Bhavesh Shah on 11/19/18.
+//  Created by Bhavesh Shah on 11/20/18.
 //  Copyright © 2018 Bhavesh Shah. All rights reserved.
 //
 
 import UIKit
 import Parse
 
-class updateViewController: UIViewController {
+class AdminViewController: UIViewController {
 
-    @IBOutlet weak var brokenSegControl: UISegmentedControl!
+    @IBOutlet weak var fixedSegControl: UISegmentedControl!
     @IBOutlet weak var floorField: UITextField!
     @IBOutlet weak var sideSegControl: UISegmentedControl!
     @IBOutlet weak var postUploadingLabel: UILabel!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -31,25 +31,25 @@ class updateViewController: UIViewController {
     @IBAction func updateOnTap(_ sender: Any) {
         var floorstring = floorField.text
         let floornumber = Int(floorstring!)
-        let brokenObects = ["Escalator","Bathroom"]
+        let fixedObects = ["Escalator","Bathroom"]
         let sides = ["East","West"]
-        let obj = brokenObects[brokenSegControl.selectedSegmentIndex]
+        let obj = fixedObects[fixedSegControl.selectedSegmentIndex]
         let side = sides[sideSegControl.selectedSegmentIndex]
-        
-        var updates = PFObject(className: "Updates")
-        updates["floor_number"] = floornumber
-        updates["uploader"] = PFUser.current()
-        updates["object"] = obj
-        updates["side"] = side
-        updates.saveInBackground(block: {(success: Bool, error: Error?) -> Void in
+        let query = PFQuery(className: "Updates")
+        query.order(byDescending: "createdAt")
+        query.findObjectsInBackground { (posts, error) in
             if error == nil {
-                    print("data uploaded")
-                    self.postUploadingLabel.text = "Post Uploaded"
+                for post in posts! {
+                    if post["floor_number"] as? Int == floornumber && post["side"] as? String == side && post["gender"] as? String == "Male" {
+                        post.deleteInBackground()
+                    }
+                }
+                    
             }
             else {
-                    print(error)
+                print(error)
             }
-        })
+        }
     }
-    
+
 }
