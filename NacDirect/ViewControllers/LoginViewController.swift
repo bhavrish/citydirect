@@ -37,7 +37,7 @@ class LoginViewController: UIViewController {
                 print("User log in failed: \(error.localizedDescription)")
             } else {
                 print("User logged in successfully")
-                if username == "Admin" {
+                if username == "admin" {
                     self.performSegue(withIdentifier: "AdminSegue", sender: nil)
                 }
                 else {
