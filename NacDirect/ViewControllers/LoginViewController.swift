@@ -40,7 +40,7 @@ class LoginViewController: UIViewController {
                     self.performSegue(withIdentifier: "AdminSegue", sender: nil)
                 }
                 else {
-                    self.performSegue(withIdentifier: "HomePageSegue", sender: nil)
+                    self.performSegue(withIdentifier: "mainSegue", sender: nil)
                 }
             }
         }
