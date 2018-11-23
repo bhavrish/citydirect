@@ -19,6 +19,7 @@
 		4532060321A473E300358AFF /* bathroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4532060221A473E300358AFF /* bathroomViewController.swift */; };
 		4532060721A4F39A00358AFF /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4532060621A4F39A00358AFF /* AdminViewController.swift */; };
 		45D79A9821A351BC001CAAF8 /* updateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D79A9721A351BC001CAAF8 /* updateViewController.swift */; };
+		45FDD55F21A8AA1C00431935 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDD55E21A8AA1C00431935 /* MainPageViewController.swift */; };
 		4979F02821A0BA62001C5039 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4979F02721A0BA62001C5039 /* HomePageViewController.swift */; };
 		4979F02B21A0BAD3001C5039 /* FloorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4979F02A21A0BAD3001C5039 /* FloorCell.swift */; };
 		53A7F416E74C0A31ED6D3725 /* Pods_NacDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96B434B40B20FD1FE19E933 /* Pods_NacDirect.framework */; };
@@ -64,6 +65,7 @@
 		4532060221A473E300358AFF /* bathroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = bathroomViewController.swift; path = /Users/bhaveshshah/Desktop/NacDirect/NacDirect/ViewControllers/bathroomViewController.swift; sourceTree = "<absolute>"; };
 		4532060621A4F39A00358AFF /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		45D79A9721A351BC001CAAF8 /* updateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateViewController.swift; sourceTree = "<group>"; };
+		45FDD55E21A8AA1C00431935 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		4979F02721A0BA62001C5039 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		4979F02A21A0BAD3001C5039 /* FloorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorCell.swift; sourceTree = "<group>"; };
 		527F26B1837D5C3118AF5FEF /* Pods_NacDirectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NacDirectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +203,7 @@
 				4532060221A473E300358AFF /* bathroomViewController.swift */,
 				4532060021A473CA00358AFF /* escalatorViewController.swift */,
 				45D79A9721A351BC001CAAF8 /* updateViewController.swift */,
+				45FDD55E21A8AA1C00431935 /* MainPageViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				45D79A9821A351BC001CAAF8 /* updateViewController.swift in Sources */,
 				4532060121A473CA00358AFF /* escalatorViewController.swift in Sources */,
 				4979F02821A0BA62001C5039 /* HomePageViewController.swift in Sources */,
+				45FDD55F21A8AA1C00431935 /* MainPageViewController.swift in Sources */,
 				4532060721A4F39A00358AFF /* AdminViewController.swift in Sources */,
 				4522F4F9219E26D30059138C /* AppDelegate.swift in Sources */,
 			);
