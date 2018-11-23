@@ -42,7 +42,7 @@ class SignUpViewController: UIViewController {
                 print(error.localizedDescription)
             } else {
                 print("User created")
-                self.performSegue(withIdentifier: "homeSegue2", sender: nil)
+                self.performSegue(withIdentifier: "mainSegue2", sender: nil)
             }
             
         }

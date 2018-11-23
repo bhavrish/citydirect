@@ -88,7 +88,7 @@
                         <outlet property="usernameField" destination="Iud-xx-QoE" id="tSQ-D5-BuU"/>
                         <segue destination="nGE-Gd-TDY" kind="show" identifier="AdminSegue" id="uXR-7Y-LLY"/>
                         <segue destination="wgD-MC-tw1" kind="show" identifier="SignUpSegue" id="oWj-gg-1BN"/>
-                        <segue destination="cij-Fm-q1e" kind="show" identifier="HomePageSegue" id="u0M-vY-drd"/>
+                        <segue destination="DqR-yv-XQZ" kind="show" identifier="mainSegue" id="seM-sh-cZc"/>
                     </connections>
                 </viewController>
                 <view contentMode="scaleToFill" id="3ch-Sk-8z1">
@@ -185,12 +185,12 @@
                         <outlet property="passwordField" destination="EnI-Hx-PfF" id="Pwd-Fy-gnF"/>
                         <outlet property="registerButtonFrame" destination="fib-FC-IYQ" id="BYy-hz-pnQ"/>
                         <outlet property="usernameField" destination="Pa6-4t-bDA" id="4YJ-e6-Q6B"/>
-                        <segue destination="sPH-pd-gyK" kind="show" identifier="homeSegue2" id="380-O4-4Q4"/>
+                        <segue destination="DqR-yv-XQZ" kind="show" identifier="mainSegue2" id="e39-hq-NBW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i9B-QF-a8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1956" y="571.92118226600985"/>
+            <point key="canvasLocation" x="970" y="829"/>
         </scene>
         <!--Admin View Controller-->
         <scene sceneID="i2d-oQ-wKz">
@@ -292,7 +292,82 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gGM-Wj-Qw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1943.2" y="-244.58128078817734"/>
+            <point key="canvasLocation" x="970" y="-541"/>
+        </scene>
+        <!--Main Page View Controller-->
+        <scene sceneID="3uw-Ud-kxI">
+            <objects>
+                <viewController id="pJn-xN-0Tb" customClass="MainPageViewController" customModule="NacDirect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lHE-EE-Axx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AVj-Sb-HPm">
+                                <rect key="frame" x="1" y="123" width="375" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eek-0i-TOD">
+                                        <rect key="frame" x="15" y="22" width="344" height="159"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="NAC">
+                                            <color key="titleColor" red="0.045059197990000001" green="0.2370987064" blue="0.4689482868" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onNAC:" destination="pJn-xN-0Tb" eventType="touchUpInside" id="bGS-WA-aNP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.78368259750000002" green="0.96385231599999999" blue="0.91442648039999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PvP-Dq-FbI">
+                                <rect key="frame" x="1" y="333" width="375" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWr-CG-264">
+                                        <rect key="frame" x="15" y="21" width="344" height="159"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="Grove">
+                                            <color key="titleColor" red="0.045059197990000001" green="0.2370987064" blue="0.4689482868" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onGrove:" destination="pJn-xN-0Tb" eventType="touchUpInside" id="c05-c8-gEK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.67976671609999995" green="0.96385231599999999" blue="0.6876849786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RGR-f0-Eo7">
+                                <rect key="frame" x="1" y="543" width="375" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUN-pw-OEw">
+                                        <rect key="frame" x="15" y="22" width="344" height="159"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="Marshak">
+                                            <color key="titleColor" red="0.045059197990000001" green="0.2370987064" blue="0.4689482868" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onMarshak:" destination="pJn-xN-0Tb" eventType="touchUpInside" id="U6e-5x-PGN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.86366355829999997" blue="0.62677766290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96385231599999999" green="0.90306826019999997" blue="0.82026188990000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="aSO-FU-unW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8wa-gp-vmt"/>
+                    <connections>
+                        <segue destination="cij-Fm-q1e" kind="show" identifier="homePageSegue" id="Mzk-7s-Yda"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pht-sF-Vem" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3001" y="120"/>
         </scene>
         <!--Home Page-->
         <scene sceneID="GpO-47-UUl">
@@ -351,9 +426,9 @@
                         <viewLayoutGuide key="safeArea" id="ikf-d8-M0G"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home Page" id="gQD-b2-6iA">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="W8R-kA-hvO">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="W8R-kA-hvO">
                             <connections>
-                                <segue destination="Pil-fQ-267" kind="presentation" id="b3u-i6-cY1"/>
+                                <segue destination="DqR-yv-XQZ" kind="presentation" id="1s4-wn-Ldx"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Update" id="ZaX-eh-GsO">
@@ -369,7 +444,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YlA-TM-MSH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3869.5999999999999" y="100.49261083743843"/>
+            <point key="canvasLocation" x="3863" y="120"/>
         </scene>
         <!--Escalator-->
         <scene sceneID="bE3-sJ-kVg">
@@ -479,7 +554,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5g1-bp-irD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2925.5999999999999" y="846.79802955665025"/>
+            <point key="canvasLocation" x="3174" y="847"/>
         </scene>
         <!--Bathroom-->
         <scene sceneID="vab-Jy-yvb">
@@ -672,25 +747,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6P7-EC-Vjw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4871.1999999999998" y="99.753694581280797"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="H3M-jy-HYm">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sPH-pd-gyK" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aWa-Pe-e4e">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="cij-Fm-q1e" kind="relationship" relationship="rootViewController" id="aTw-w3-2oy"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mL4-m1-w1N" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2927.1999999999998" y="100.49261083743843"/>
+            <point key="canvasLocation" x="4742" y="847"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uLd-qZ-pYq">
@@ -710,12 +767,30 @@
             </objects>
             <point key="canvasLocation" x="28" y="99.753694581280797"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mnh-dI-Df3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DqR-yv-XQZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fbR-Nz-vj0">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pJn-xN-0Tb" kind="relationship" relationship="rootViewController" id="pBG-9i-QTe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bwy-9F-4Xx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2178" y="100"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Bathroom-gender-sign" width="1600" height="1600"/>
         <image name="escalator-image" width="2048" height="2048"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="u0M-vY-drd"/>
+        <segue reference="e39-hq-NBW"/>
     </inferredMetricsTieBreakers>
 </document>
