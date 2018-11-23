@@ -17,8 +17,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // set register button properties
-        
+        // set login button properties
         loginButtonFrame.layer.cornerRadius = 8.0
         loginButtonFrame.clipsToBounds = true
     }
