@@ -16,13 +16,13 @@
 		4522F50E219E26D40059138C /* NacDirectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522F50D219E26D40059138C /* NacDirectTests.swift */; };
 		4522F519219E26D40059138C /* NacDirectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522F518219E26D40059138C /* NacDirectUITests.swift */; };
 		4532060121A473CA00358AFF /* escalatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4532060021A473CA00358AFF /* escalatorViewController.swift */; };
-		4532060321A473E300358AFF /* bathroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4532060221A473E300358AFF /* bathroomViewController.swift */; };
 		4532060721A4F39A00358AFF /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4532060621A4F39A00358AFF /* AdminViewController.swift */; };
 		45D79A9821A351BC001CAAF8 /* updateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D79A9721A351BC001CAAF8 /* updateViewController.swift */; };
 		4979F02821A0BA62001C5039 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4979F02721A0BA62001C5039 /* HomePageViewController.swift */; };
 		4979F02B21A0BAD3001C5039 /* FloorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4979F02A21A0BAD3001C5039 /* FloorCell.swift */; };
 		53A7F416E74C0A31ED6D3725 /* Pods_NacDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96B434B40B20FD1FE19E933 /* Pods_NacDirect.framework */; };
 		6E502103266003A5E8298844 /* Pods_NacDirectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8108CB35D3980A762C3D8A5 /* Pods_NacDirectTests.framework */; };
+		E534686C21A8A06A002772AD /* bathroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534686B21A8A06A002772AD /* bathroomViewController.swift */; };
 		E587CCA7219FD1B900733593 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E587CCA6219FD1B900733593 /* LoginViewController.swift */; };
 		E5F181B6219FF38C00B05A48 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F181B5219FF38C00B05A48 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
@@ -61,7 +61,6 @@
 		4522F518219E26D40059138C /* NacDirectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NacDirectUITests.swift; sourceTree = "<group>"; };
 		4522F51A219E26D40059138C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4532060021A473CA00358AFF /* escalatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = escalatorViewController.swift; sourceTree = "<group>"; };
-		4532060221A473E300358AFF /* bathroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = bathroomViewController.swift; path = /Users/bhaveshshah/Desktop/NacDirect/NacDirect/ViewControllers/bathroomViewController.swift; sourceTree = "<absolute>"; };
 		4532060621A4F39A00358AFF /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		45D79A9721A351BC001CAAF8 /* updateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateViewController.swift; sourceTree = "<group>"; };
 		4979F02721A0BA62001C5039 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +71,7 @@
 		A7A6512195F6E900FEB98098 /* Pods-NacDirect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NacDirect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NacDirect/Pods-NacDirect.debug.xcconfig"; sourceTree = "<group>"; };
 		A8108CB35D3980A762C3D8A5 /* Pods_NacDirectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NacDirectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D2E4794C97143EAEA41E5B /* Pods-NacDirectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NacDirectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NacDirectUITests/Pods-NacDirectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E534686B21A8A06A002772AD /* bathroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bathroomViewController.swift; sourceTree = "<group>"; };
 		E587CCA6219FD1B900733593 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E5F181B5219FF38C00B05A48 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F96B434B40B20FD1FE19E933 /* Pods_NacDirect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NacDirect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,9 +198,9 @@
 				4532060621A4F39A00358AFF /* AdminViewController.swift */,
 				E5F181B5219FF38C00B05A48 /* SignUpViewController.swift */,
 				4979F02721A0BA62001C5039 /* HomePageViewController.swift */,
-				4532060221A473E300358AFF /* bathroomViewController.swift */,
 				4532060021A473CA00358AFF /* escalatorViewController.swift */,
 				45D79A9721A351BC001CAAF8 /* updateViewController.swift */,
+				E534686B21A8A06A002772AD /* bathroomViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -345,12 +345,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-NacDirect/Pods-NacDirect-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,10 +422,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4979F02B21A0BAD3001C5039 /* FloorCell.swift in Sources */,
-				4532060321A473E300358AFF /* bathroomViewController.swift in Sources */,
 				E587CCA7219FD1B900733593 /* LoginViewController.swift in Sources */,
 				4522F4FB219E26D40059138C /* ViewController.swift in Sources */,
 				E5F181B6219FF38C00B05A48 /* SignUpViewController.swift in Sources */,
+				E534686C21A8A06A002772AD /* bathroomViewController.swift in Sources */,
 				45D79A9821A351BC001CAAF8 /* updateViewController.swift in Sources */,
 				4532060121A473CA00358AFF /* escalatorViewController.swift in Sources */,
 				4979F02821A0BA62001C5039 /* HomePageViewController.swift in Sources */,
