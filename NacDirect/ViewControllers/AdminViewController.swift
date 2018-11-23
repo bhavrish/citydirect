@@ -44,7 +44,7 @@ class AdminViewController: UIViewController {
                         post.deleteInBackground()
                     }
                 }
-                    
+                self.postUploadingLabel.text = "Post Uploaded"
             }
             else {
                 print(error)
