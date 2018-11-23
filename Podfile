@@ -8,6 +8,7 @@ target 'NacDirect' do
   # Pods for NacDirect
     pod 'Alamofire', '~> 4.7'
     pod 'Parse'
+    pod 'MBProgressHUD'
 
 
   target 'NacDirectTests' do

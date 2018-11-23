@@ -1,6 +1,6 @@
 //
 //  bathroomViewController.swift
-//  
+//
 //
 //  Created by Bhavesh Shah on 11/20/18.
 //
@@ -9,7 +9,7 @@ import UIKit
 import Parse
 
 class bathroomViewController: UIViewController {
-
+    
     var firsttotal = 0
     var secondtotal = 0
     var thirdtotal = 0
@@ -21,10 +21,10 @@ class bathroomViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         fetchPostData()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -69,5 +69,5 @@ class bathroomViewController: UIViewController {
             fourthPic.backgroundColor = .red
         }
     }
-
+    
 }
