@@ -11,6 +11,8 @@ import UIKit
 class FloorCell: UITableViewCell {
 
     @IBOutlet weak var floorNumber: UILabel!
+    @IBOutlet weak var escalatorButton: UIButton!
+    @IBOutlet weak var bathroomButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
