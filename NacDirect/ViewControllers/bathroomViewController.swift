@@ -14,6 +14,7 @@ class bathroomViewController: UIViewController {
     var secondtotal = 0
     var thirdtotal = 0
     var fourthtotal = 0
+    var floorNumber:String!
     @IBOutlet weak var firstPic: UIView!
     @IBOutlet weak var secondPic: UIView!
     @IBOutlet weak var thirdPic: UIView!
@@ -21,7 +22,6 @@ class bathroomViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         fetchPostData()
     }
     
@@ -36,16 +36,16 @@ class bathroomViewController: UIViewController {
         query.findObjectsInBackground { (posts, error) in
             if error == nil {
                 for post in posts! {
-                    if post["floor_number"] as? Int == 5 && post["side"] as? String == "East" && post["gender"] as? String == "Male" {
+                    if post["floor_number"] as? String == self.floorNumber! && post["side"] as? String == "East" && post["gender"] as? String == "Male" {
                         self.firsttotal += 1 //need to work on this part
                     }
-                    if post["floor_number"] as? Int == 5 && post["side"] as? String == "West" && post["gender"] as? String == "Female" {
+                    else if post["floor_number"] as? String == self.floorNumber! && post["side"] as? String == "East" && post["gender"] as? String == "Female" {
                         self.secondtotal += 1 //need to work on this part
                     }
-                    if post["floor_number"] as? Int == 5 && post["side"] as? String == "East" && post["gender"] as? String == "Male" {
+                    else if post["floor_number"] as? String == self.floorNumber! && post["side"] as? String == "West" && post["gender"] as? String == "Male" {
                         self.thirdtotal += 1 //need to work on this part
                     }
-                    if post["floor_number"] as? Int == 5 as? Int && post["side"] as? String == "West" && post["gender"] as? String == "Female" {
+                    else if post["floor_number"] as? String == self.floorNumber! && post["side"] as? String == "West" && post["gender"] as? String == "Female" {
                         self.fourthtotal += 1 //need to work on this part
                     }
                 }
@@ -54,20 +54,27 @@ class bathroomViewController: UIViewController {
             else {
                 print(error)
             }
+            setColors()
         }
         
-        if firsttotal >= 3 {
-            firstPic.backgroundColor = .red
+        func setColors() {
+            if firsttotal >= 3 {
+                firstPic.backgroundColor = .red
+            }
+            if secondtotal >= 3 {
+                secondPic.backgroundColor = .red
+            }
+            if thirdtotal >= 3 {
+                thirdPic.backgroundColor = .red
+            }
+            if fourthtotal >= 3 {
+                fourthPic.backgroundColor = .red
+            }
         }
-        if secondtotal >= 3 {
-            secondPic.backgroundColor = .red
-        }
-        if thirdtotal >= 3 {
-            thirdPic.backgroundColor = .red
-        }
-        if fourthtotal >= 3 {
-            fourthPic.backgroundColor = .red
-        }
+        
+        
     }
     
 }
+
+
