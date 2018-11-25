@@ -26,9 +26,11 @@ class MainPageViewController: UIViewController {
     }
     
     @IBAction func onGrove(_ sender: Any) {
+        self.performSegue(withIdentifier: "groveSegue", sender: nil)
     }
     
     @IBAction func onMarshak(_ sender: Any) {
+        self.performSegue(withIdentifier: "marshakSegue", sender: nil)
     }
     
 }
