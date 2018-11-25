@@ -19,6 +19,15 @@
 		4532060721A4F39A00358AFF /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4532060621A4F39A00358AFF /* AdminViewController.swift */; };
 		45D79A9821A351BC001CAAF8 /* updateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D79A9721A351BC001CAAF8 /* updateViewController.swift */; };
 		45FDD56321A8C72000431935 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDD56221A8C72000431935 /* MainPageViewController.swift */; };
+		45FDD56621AA1E0000431935 /* groveHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDD56521AA1E0000431935 /* groveHomePageViewController.swift */; };
+		45FDD56821AA1E6000431935 /* groveUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDD56721AA1E6000431935 /* groveUpdateViewController.swift */; };
+		45FDD56C21AA1E8300431935 /* groveBathroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDD56B21AA1E8300431935 /* groveBathroomViewController.swift */; };
+		45FDD56E21AA1EEE00431935 /* groveElevatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDD56D21AA1EEE00431935 /* groveElevatorViewController.swift */; };
+		45FDD57021AA211100431935 /* marshakHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDD56F21AA211100431935 /* marshakHomePageViewController.swift */; };
+		45FDD57221AA212500431935 /* marshakUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDD57121AA212500431935 /* marshakUpdateViewController.swift */; };
+		45FDD57421AA213700431935 /* marshakBathroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDD57321AA213700431935 /* marshakBathroomViewController.swift */; };
+		45FDD57621AA214E00431935 /* marshakElevatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDD57521AA214E00431935 /* marshakElevatorViewController.swift */; };
+		45FDD57821AAF7DB00431935 /* GroveFloorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDD57721AAF7DB00431935 /* GroveFloorCell.swift */; };
 		4979F02821A0BA62001C5039 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4979F02721A0BA62001C5039 /* HomePageViewController.swift */; };
 		4979F02B21A0BAD3001C5039 /* FloorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4979F02A21A0BAD3001C5039 /* FloorCell.swift */; };
 		53A7F416E74C0A31ED6D3725 /* Pods_NacDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96B434B40B20FD1FE19E933 /* Pods_NacDirect.framework */; };
@@ -65,6 +74,15 @@
 		4532060621A4F39A00358AFF /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		45D79A9721A351BC001CAAF8 /* updateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateViewController.swift; sourceTree = "<group>"; };
 		45FDD56221A8C72000431935 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		45FDD56521AA1E0000431935 /* groveHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groveHomePageViewController.swift; sourceTree = "<group>"; };
+		45FDD56721AA1E6000431935 /* groveUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groveUpdateViewController.swift; sourceTree = "<group>"; };
+		45FDD56B21AA1E8300431935 /* groveBathroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groveBathroomViewController.swift; sourceTree = "<group>"; };
+		45FDD56D21AA1EEE00431935 /* groveElevatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groveElevatorViewController.swift; sourceTree = "<group>"; };
+		45FDD56F21AA211100431935 /* marshakHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marshakHomePageViewController.swift; sourceTree = "<group>"; };
+		45FDD57121AA212500431935 /* marshakUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marshakUpdateViewController.swift; sourceTree = "<group>"; };
+		45FDD57321AA213700431935 /* marshakBathroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marshakBathroomViewController.swift; sourceTree = "<group>"; };
+		45FDD57521AA214E00431935 /* marshakElevatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marshakElevatorViewController.swift; sourceTree = "<group>"; };
+		45FDD57721AAF7DB00431935 /* GroveFloorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroveFloorCell.swift; sourceTree = "<group>"; };
 		4979F02721A0BA62001C5039 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		4979F02A21A0BAD3001C5039 /* FloorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorCell.swift; sourceTree = "<group>"; };
 		527F26B1837D5C3118AF5FEF /* Pods_NacDirectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NacDirectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				4979F02A21A0BAD3001C5039 /* FloorCell.swift */,
+				45FDD57721AAF7DB00431935 /* GroveFloorCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -212,6 +231,14 @@
 				45D79A9721A351BC001CAAF8 /* updateViewController.swift */,
 				E534686B21A8A06A002772AD /* bathroomViewController.swift */,
 				45FDD56221A8C72000431935 /* MainPageViewController.swift */,
+				45FDD56521AA1E0000431935 /* groveHomePageViewController.swift */,
+				45FDD56721AA1E6000431935 /* groveUpdateViewController.swift */,
+				45FDD56B21AA1E8300431935 /* groveBathroomViewController.swift */,
+				45FDD56D21AA1EEE00431935 /* groveElevatorViewController.swift */,
+				45FDD56F21AA211100431935 /* marshakHomePageViewController.swift */,
+				45FDD57121AA212500431935 /* marshakUpdateViewController.swift */,
+				45FDD57321AA213700431935 /* marshakBathroomViewController.swift */,
+				45FDD57521AA214E00431935 /* marshakElevatorViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -432,17 +459,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45FDD56E21AA1EEE00431935 /* groveElevatorViewController.swift in Sources */,
+				45FDD56621AA1E0000431935 /* groveHomePageViewController.swift in Sources */,
 				4979F02B21A0BAD3001C5039 /* FloorCell.swift in Sources */,
 				E587CCA7219FD1B900733593 /* LoginViewController.swift in Sources */,
+				45FDD57421AA213700431935 /* marshakBathroomViewController.swift in Sources */,
 				4522F4FB219E26D40059138C /* ViewController.swift in Sources */,
+				45FDD57221AA212500431935 /* marshakUpdateViewController.swift in Sources */,
 				E5F181B6219FF38C00B05A48 /* SignUpViewController.swift in Sources */,
+				45FDD57821AAF7DB00431935 /* GroveFloorCell.swift in Sources */,
 				45FDD56321A8C72000431935 /* MainPageViewController.swift in Sources */,
+				45FDD57621AA214E00431935 /* marshakElevatorViewController.swift in Sources */,
+				45FDD56821AA1E6000431935 /* groveUpdateViewController.swift in Sources */,
 				E534686C21A8A06A002772AD /* bathroomViewController.swift in Sources */,
 				45D79A9821A351BC001CAAF8 /* updateViewController.swift in Sources */,
+				45FDD57021AA211100431935 /* marshakHomePageViewController.swift in Sources */,
 				4532060121A473CA00358AFF /* escalatorViewController.swift in Sources */,
 				4979F02821A0BA62001C5039 /* HomePageViewController.swift in Sources */,
 				4532060721A4F39A00358AFF /* AdminViewController.swift in Sources */,
 				4522F4F9219E26D30059138C /* AppDelegate.swift in Sources */,
+				45FDD56C21AA1E8300431935 /* groveBathroomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
