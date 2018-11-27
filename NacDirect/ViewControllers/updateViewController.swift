@@ -8,28 +8,31 @@
 
 import UIKit
 import Parse
+import MBProgressHUD
 
 class updateViewController: UIViewController {
-
+    
     @IBOutlet weak var brokenSegControl: UISegmentedControl!
     @IBOutlet weak var floorField: UITextField!
     @IBOutlet weak var sideSegControl: UISegmentedControl!
-    @IBOutlet weak var postUploadingLabel: UILabel!
     
-
     @IBOutlet weak var directionView: UIView!
     @IBOutlet weak var directionSegControl: UISegmentedControl!
     
     @IBOutlet weak var genderView: UIView!
     @IBOutlet weak var genderSegControl: UISegmentedControl!
     
+    @IBOutlet weak var updateButtonFrame: UIView!
     
     var counter = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         genderView.isHidden = true
-        // Do any additional setup after loading the view.
+        
+        // set update button properties
+        updateButtonFrame.layer.cornerRadius = 8.0
+        updateButtonFrame.clipsToBounds = true
     }
     
     override func didReceiveMemoryWarning() {
@@ -38,8 +41,12 @@ class updateViewController: UIViewController {
     }
     
     @IBAction func updateOnTap(_ sender: Any) {
-        var floorstring = floorField.text
-        let floornumber = floorstring
+        // adds status update indicator
+        let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
+        hud.mode = .indeterminate
+        
+        // var floorstring = floorField.text
+        let floornumber = floorField.text
         let brokenObects = ["Escalator","Bathroom"]
         let sides = ["East","West"]
         let directionArr = ["Up","Down"]
@@ -50,6 +57,7 @@ class updateViewController: UIViewController {
         let gend = genderArr[genderSegControl.selectedSegmentIndex]
         
         var updates = PFObject(className: "Updates")
+        updates["building"] = "nac"
         updates["floor_number"] = floornumber
         updates["uploader"] = PFUser.current()
         updates["object"] = obj
@@ -62,8 +70,15 @@ class updateViewController: UIViewController {
         }
         updates.saveInBackground(block: {(success: Bool, error: Error?) -> Void in
             if error == nil {
-                print("data uploaded")
-                self.postUploadingLabel.text = "Post Uploaded"
+                DispatchQueue.main.async {
+                    sleep(1)
+                    
+                    // show completion indicator
+                    hud.mode = .customView
+                    hud.label.text = "Updated"
+                    hud.customView = UIImageView(image: #imageLiteral(resourceName: "Checkmark"))
+                    hud.hide(animated:true, afterDelay: 1)
+                }
             }
             else {
                 print(error)
@@ -75,13 +90,13 @@ class updateViewController: UIViewController {
     @IBAction func brokenSegChanged(_ sender: Any) {
         counter = counter + 1
         
-        //When escalator option is shown
+        // When escalator option is shown
         if counter%2 == 0 {
             genderView.isHidden = true;
             directionView.isHidden = false;
             
         }
-            //When Bathroom option is shown
+        // When Bathroom option is shown
         else {
             genderView.isHidden = false;
             directionView.isHidden = true;

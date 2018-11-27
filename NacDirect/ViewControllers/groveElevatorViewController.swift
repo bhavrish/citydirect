@@ -23,7 +23,7 @@ class groveElevatorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchPostData()
+//        fetchPostData()
     }
     
     override func didReceiveMemoryWarning() {
