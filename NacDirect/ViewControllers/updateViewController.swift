@@ -62,6 +62,7 @@ class updateViewController: UIViewController {
         updates["uploader"] = PFUser.current()
         updates["object"] = obj
         updates["side"] = side
+        
         if genderView.isHidden == true {
             updates["direction"] = dir
         }

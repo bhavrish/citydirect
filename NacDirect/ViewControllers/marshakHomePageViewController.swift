@@ -23,7 +23,7 @@ class marshakHomePageViewController: UIViewController, UITableViewDataSource, UI
     
     // Number of Rows
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3;
+        return 10;
     }
     
     // Contents for each cell
