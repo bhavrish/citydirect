@@ -39,13 +39,13 @@ class marshakHomePageViewController: UIViewController, UITableViewDataSource, UI
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //Passing the floor number to either bathroom or elevator VC
         if segue.identifier == "marshakElevatorSegue" {
-            let escalatorVC = segue.destination as! escalatorViewController
+            let escalatorVC = segue.destination as! marshakElevatorViewController
             let button = sender as! UIButton
             let floorNumber:String = button.titleLabel!.text!
             escalatorVC.floorNumber = floorNumber
         }
-        else if segue.identifier == "markshakBathroomSegue"{
-            let bathroomVC = segue.destination as! bathroomViewController
+        else if segue.identifier == "marshakBathroomSegue"{
+            let bathroomVC = segue.destination as! marshakBathroomViewController
             let button = sender as! UIButton
             let floorNumber:String = button.titleLabel!.text!
             bathroomVC.floorNumber = floorNumber

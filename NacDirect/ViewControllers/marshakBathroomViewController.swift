@@ -23,6 +23,7 @@ class marshakBathroomViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(floorNumber)
         fetchPostData()
     }
     
