@@ -14,11 +14,14 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var registerButtonFrame: UIView!
+    @IBOutlet weak var fieldFrame: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // set register button properties
+        fieldFrame.layer.cornerRadius = 8.0
+        fieldFrame.clipsToBounds = true
         registerButtonFrame.layer.cornerRadius = 8.0
         registerButtonFrame.clipsToBounds = true
     }

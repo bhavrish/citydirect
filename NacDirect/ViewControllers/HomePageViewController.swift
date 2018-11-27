@@ -21,15 +21,14 @@ class HomePageViewController: UIViewController, UITableViewDataSource, UITableVi
         tableView.delegate = self;
         self.tableView.rowHeight = 100
         
-        // Do any additional setup after loading the view.
     }
     
-    //Nummber of Rows
+    // Nummber of Rows
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 8;
     }
     
-    //Contents for each cell
+    // Contents for each cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FloorCell", for: indexPath) as! FloorCell
         cell.floorNumber.text = String (indexPath.row+1)

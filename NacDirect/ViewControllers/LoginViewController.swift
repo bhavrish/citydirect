@@ -13,6 +13,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var loginButtonFrame: UIView!
+    @IBOutlet weak var signinFrame: UIView!
+    @IBOutlet weak var signupFrame: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,10 @@ class LoginViewController: UIViewController {
         // set login button properties
         loginButtonFrame.layer.cornerRadius = 8.0
         loginButtonFrame.clipsToBounds = true
+        signinFrame.layer.cornerRadius = 8.0
+        signinFrame.clipsToBounds = true
+        signupFrame.layer.cornerRadius = 8.0
+        signupFrame.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {

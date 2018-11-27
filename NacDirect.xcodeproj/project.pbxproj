@@ -35,6 +35,7 @@
 		E534686C21A8A06A002772AD /* bathroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534686B21A8A06A002772AD /* bathroomViewController.swift */; };
 		E587CCA7219FD1B900733593 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E587CCA6219FD1B900733593 /* LoginViewController.swift */; };
 		E5F181B6219FF38C00B05A48 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F181B5219FF38C00B05A48 /* SignUpViewController.swift */; };
+		E5FA039B21ACEED1000A0F37 /* MarshakFloorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FA039A21ACEED1000A0F37 /* MarshakFloorCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		E534686B21A8A06A002772AD /* bathroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bathroomViewController.swift; sourceTree = "<group>"; };
 		E587CCA6219FD1B900733593 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E5F181B5219FF38C00B05A48 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E5FA039A21ACEED1000A0F37 /* MarshakFloorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarshakFloorCell.swift; sourceTree = "<group>"; };
 		F96B434B40B20FD1FE19E933 /* Pods_NacDirect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NacDirect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,6 +195,7 @@
 			children = (
 				4979F02A21A0BAD3001C5039 /* FloorCell.swift */,
 				45FDD57721AAF7DB00431935 /* GroveFloorCell.swift */,
+				E5FA039A21ACEED1000A0F37 /* MarshakFloorCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				4979F02821A0BA62001C5039 /* HomePageViewController.swift in Sources */,
 				4532060721A4F39A00358AFF /* AdminViewController.swift in Sources */,
 				4522F4F9219E26D30059138C /* AppDelegate.swift in Sources */,
+				E5FA039B21ACEED1000A0F37 /* MarshakFloorCell.swift in Sources */,
 				45FDD56C21AA1E8300431935 /* groveBathroomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -46,13 +46,13 @@ class groveHomePageViewController: UIViewController, UITableViewDataSource, UITa
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //Passing the floor number to either bathroom or elevator VC
-        if segue.identifier == "groveElevatorSeg" {
+        if segue.identifier == "groveElevatorSegue" {
             let elevatorVC = segue.destination as! groveElevatorViewController
             let button = sender as! UIButton
             let floorNumber:String = button.titleLabel!.text!
             elevatorVC.floorNumber = floorNumber
         }
-        else if segue.identifier == "groveBathroomSeg"{
+        else if segue.identifier == "groveBathroomSegue"{
             let bathroomVC = segue.destination as! groveBathroomViewController
             let button = sender as! UIButton
             let floorNumber:String = button.titleLabel!.text!
