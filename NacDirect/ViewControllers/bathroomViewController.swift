@@ -36,16 +36,16 @@ class bathroomViewController: UIViewController {
         query.findObjectsInBackground { (posts, error) in
             if error == nil {
                 for post in posts! {
-                    if post["floor_number"] as? String == self.floorNumber! && post["side"] as? String == "East" && post["gender"] as? String == "Male" {
+                    if post["building"] as? String == "nac" && post["floor_number"] as? String == self.floorNumber! && post["side"] as? String == "East" && post["gender"] as? String == "Male" {
                         self.firsttotal += 1 //need to work on this part
                     }
-                    else if post["floor_number"] as? String == self.floorNumber! && post["side"] as? String == "East" && post["gender"] as? String == "Female" {
+                    else if post["building"] as? String == "nac" && post["floor_number"] as? String == self.floorNumber! && post["side"] as? String == "East" && post["gender"] as? String == "Female" {
                         self.secondtotal += 1 //need to work on this part
                     }
-                    else if post["floor_number"] as? String == self.floorNumber! && post["side"] as? String == "West" && post["gender"] as? String == "Male" {
+                    else if post["building"] as? String == "nac" && post["floor_number"] as? String == self.floorNumber! && post["side"] as? String == "West" && post["gender"] as? String == "Male" {
                         self.thirdtotal += 1 //need to work on this part
                     }
-                    else if post["floor_number"] as? String == self.floorNumber! && post["side"] as? String == "West" && post["gender"] as? String == "Female" {
+                    else if post["building"] as? String == "nac" && post["floor_number"] as? String == self.floorNumber! && post["side"] as? String == "West" && post["gender"] as? String == "Female" {
                         self.fourthtotal += 1 //need to work on this part
                     }
                 }

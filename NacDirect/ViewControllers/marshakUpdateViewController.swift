@@ -64,7 +64,7 @@ class marshakUpdateViewController: UIViewController {
         var update = PFObject(className: "Updates")
         update["building"] = "marshak"
         update["uploader"] = PFUser.current()
-        update["object"] = broken
+        // update["object"] = broken why do we need this line?
         
         if genderView.isHidden == true {
             update["elevator_number"] = elevator

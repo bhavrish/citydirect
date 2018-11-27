@@ -46,11 +46,6 @@
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFt-fn-ZNn">
-                                <rect key="frame" x="122" y="603" width="123" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Homepage"/>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xJn-zI-5RZ">
                                 <rect key="frame" x="122" y="364" width="133" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -695,7 +690,7 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.59999999999999998" green="1" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.67976671609999995" green="0.96385231599999999" blue="0.6876849786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
@@ -830,6 +825,12 @@
                         <color key="backgroundColor" red="0.96385231599999999" green="0.90306826019999997" blue="0.82026188990000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="bcW-5q-bqE"/>
                     </view>
+                    <connections>
+                        <outlet property="firstPic" destination="UDz-NG-Xod" id="NmD-CB-iB3"/>
+                        <outlet property="fourthPic" destination="PTq-rj-rqR" id="x5H-bn-KrP"/>
+                        <outlet property="secondPic" destination="sPb-CU-3ET" id="92N-iO-pqP"/>
+                        <outlet property="thirdPic" destination="fFv-t7-0lj" id="hc1-Z2-05n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xfp-se-oUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1109,6 +1110,14 @@
                         <color key="backgroundColor" red="0.96385231599999999" green="0.90306826019999997" blue="0.82026188990000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="zfX-rh-bpm"/>
                     </view>
+                    <connections>
+                        <outlet property="fifthPic" destination="jp0-Bv-3bY" id="uuI-Ih-3lQ"/>
+                        <outlet property="firstPic" destination="crf-zf-40j" id="ZJz-8F-nIH"/>
+                        <outlet property="fourthPic" destination="xyq-qW-iWv" id="4Xy-Yy-e8E"/>
+                        <outlet property="secondPic" destination="Rc0-Fd-ZLI" id="eKe-s4-mOF"/>
+                        <outlet property="sixthPic" destination="rfg-wS-34W" id="YZR-lh-7hQ"/>
+                        <outlet property="thirdPic" destination="8MY-vh-mG8" id="hjc-Fv-QzT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0y5-rd-VSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1159,6 +1168,7 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <color key="backgroundColor" red="1" green="0.86366355829999997" blue="0.62677766290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
@@ -1754,6 +1764,6 @@
         <image name="escalator_icon_up" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="e39-hq-NBW"/>
+        <segue reference="seM-sh-cZc"/>
     </inferredMetricsTieBreakers>
 </document>

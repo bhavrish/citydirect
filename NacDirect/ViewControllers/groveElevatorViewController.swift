@@ -23,7 +23,7 @@ class groveElevatorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        fetchPostData()
+        fetchPostData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -37,17 +37,17 @@ class groveElevatorViewController: UIViewController {
         query.findObjectsInBackground { (posts, error) in
             if error == nil {
                 for post in posts! {
-                    if post["floor_number"] as? String == self.floorNumber! && post["side"] as? String == "East" && post["direction"] as? String == "Up" {
+                    if post["building"] as? String == "marshak" && post["elevator_number"] as? String == "1" {
                         
                         self.firsttotal += 1 //need to work on this part
                     }
-                    else if post["floor_number"] as? String == self.floorNumber! && post["side"] as? String == "East" && post["direction"] as? String == "Down" {
+                    else if post["building"] as? String == "marshak" && post["elevator_number"] as? String == "2" {
                         self.secondtotal += 1 //need to work on this part
                     }
-                    else if post["floor_number"] as? String == self.floorNumber! && post["side"] as? String == "West" && post["direction"] as? String == "Up" {
+                    else if post["building"] as? String == "marshak" && post["elevator_number"] as? String == "3" {
                         self.thirdtotal += 1 //need to work on this part
                     }
-                    else if post["floor_number"] as? String == self.floorNumber! && post["side"] as? String == "West" && post["direction"] as? String == "Down" {
+                    else if post["building"] as? String == "marshak" && post["elevator_number"] as? String == "4" {
                         self.fourthtotal += 1 //need to work on this part
                     }
                 }
