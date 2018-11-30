@@ -96,6 +96,7 @@
                 } else {
                     update["gender"] = gender
                     update["floor_number"] = floorNum
+                    update["side"] = side
                 }
                 
                 update.saveInBackground(block: {(success: Bool, error: Error?) -> Void in

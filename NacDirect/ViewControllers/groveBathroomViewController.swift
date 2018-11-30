@@ -23,7 +23,7 @@ class groveBathroomViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        fetchPostData()
+        fetchPostData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -55,6 +55,8 @@ class groveBathroomViewController: UIViewController {
             else {
                 print(error)
             }
+            print(self.floorNumber)
+            print(self.firsttotal)
             setColors()
         }
         
