@@ -22,11 +22,16 @@ class marshakUpdateViewController: UIViewController {
     @IBOutlet weak var sideLabel: UILabel!
     @IBOutlet weak var sideSegControl: UISegmentedControl!
     @IBOutlet weak var updateButtonFrame: UIView!
+    @IBOutlet weak var brokenText: UILabel!
     
     var counter = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if PFUser.current()?.username == "admin" {
+            brokenText.text = "What has been fixed?"
+        }
         
         // hide these elements when elevator is selected
         genderView.isHidden = true
@@ -61,36 +66,63 @@ class marshakUpdateViewController: UIViewController {
         let side = sideSeg[sideSegControl.selectedSegmentIndex]
         let floorNum = floorField.text
         
-        var update = PFObject(className: "Updates")
-        update["building"] = "marshak"
-        update["uploader"] = PFUser.current()
-        // update["object"] = broken why do we need this line?
-        
-        if genderView.isHidden == true {
-            update["elevator_number"] = elevator
-        } else {
-            update["gender"] = gender
-            update["floor_number"] = floorNum
-            update["side"] = side
-        }
-        
-        update.saveInBackground(block: {(success: Bool, error: Error?) -> Void in
-            if error == nil {
-                DispatchQueue.main.async {
-                    sleep(1)
-                    
-                    // show completion indicator
-                    hud.mode = .customView
-                    hud.label.text = "Updated"
-                    hud.customView = UIImageView(image: #imageLiteral(resourceName: "Checkmark"))
-                    hud.hide(animated:true, afterDelay: 1)
+        if PFUser.current()?.username == "admin" { // if user is admin, delete posts
+            let query = PFQuery(className: "Updates")
+            query.order(byDescending: "createdAt")
+            query.findObjectsInBackground { (posts, error) in
+                if error == nil {
+                    for post in posts! {
+                        if self.genderView.isHidden == true { // if elevator has been fixed
+                            if post["building"] as? String == "marshak" && post["elevator_number"] as? String == elevator {
+                                post.deleteInBackground()
+                            }
+                        }
+                        else { // if bathroom has been fixed
+                            if post["building"] as? String == "marshak" && post["floor_number"] as? String == floorNum && post["side"] as? String == side && post["gender"] as? String == gender {
+                                post.deleteInBackground()
+                            }
+                        }
+                    }
+                }
+                else {
+                    print(error)
                 }
             }
-            else {
-                print(error)
+        }
+        else { // if user is regular person, update database
+            var update = PFObject(className: "Updates")
+            update["building"] = "marshak"
+            update["uploader"] = PFUser.current()
+            // update["object"] = broken why do we need this line?
+            
+            if genderView.isHidden == true {
+                update["elevator_number"] = elevator
+            } else {
+                update["gender"] = gender
+                update["floor_number"] = floorNum
+                update["side"] = side
             }
-        })
+            
+            update.saveInBackground(block: {(success: Bool, error: Error?) -> Void in
+                if error == nil {
+                    DispatchQueue.main.async {
+                        sleep(1)
+                        
+                        // show completion indicator
+                        hud.mode = .customView
+                        hud.label.text = "Updated"
+                        hud.customView = UIImageView(image: #imageLiteral(resourceName: "Checkmark"))
+                        hud.hide(animated:true, afterDelay: 1)
+                    }
+                }
+                else {
+                    print(error)
+                }
+            })
+        }
+        
     }
+    
     
     @IBAction func onBrokenChanged(_ sender: Any) {
         counter = counter + 1

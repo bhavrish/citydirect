@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pil-fQ-267">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pil-fQ-267">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -93,7 +93,6 @@
                         <outlet property="signinFrame" destination="B3U-CU-VQe" id="mxI-eb-rZl"/>
                         <outlet property="signupFrame" destination="rxm-No-nH0" id="aMf-HM-JVH"/>
                         <outlet property="usernameField" destination="Iud-xx-QoE" id="tSQ-D5-BuU"/>
-                        <segue destination="nGE-Gd-TDY" kind="show" identifier="AdminSegue" id="uXR-7Y-LLY"/>
                         <segue destination="wgD-MC-tw1" kind="show" identifier="SignUpSegue" id="oWj-gg-1BN"/>
                         <segue destination="DqR-yv-XQZ" kind="show" identifier="mainSegue" id="seM-sh-cZc"/>
                     </connections>
@@ -524,7 +523,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is broken?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LxA-oK-ol4">
-                                <rect key="frame" x="15" y="150" width="227" height="42"/>
+                                <rect key="frame" x="15" y="150" width="344" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
                                 <color key="textColor" red="0.42370863060000002" green="0.405097757" blue="0.64946859140000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -626,18 +625,35 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.96385231599999999" green="0.90306826019999997" blue="0.82026188990000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Which side of building?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ig-lt-Juv">
+                                <rect key="frame" x="14" y="494" width="328" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
+                                <color key="textColor" red="0.42370863060000002" green="0.405097757" blue="0.64946859140000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FZZ-0o-6nG">
+                                <rect key="frame" x="14" y="556" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="East"/>
+                                    <segment title="West"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.96385231599999999" green="0.90306826019999997" blue="0.82026188990000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6wA-Hc-7pX"/>
                     </view>
                     <connections>
                         <outlet property="brokenSegControl" destination="0QU-X5-YAz" id="U9j-2Z-LJg"/>
+                        <outlet property="brokenText" destination="LxA-oK-ol4" id="vRW-Zj-Hnz"/>
                         <outlet property="elevatorSegControl" destination="NgR-2N-lqu" id="2QC-39-Aw0"/>
                         <outlet property="elevatorView" destination="rti-TN-0YW" id="HY5-Qb-kRm"/>
                         <outlet property="floorField" destination="BDq-BX-Nd8" id="V13-y0-6cd"/>
                         <outlet property="floorView" destination="3nI-zO-vR4" id="wzB-Ks-Df8"/>
                         <outlet property="genderSegControl" destination="7Gy-6j-Dgl" id="O7W-pW-uci"/>
                         <outlet property="genderView" destination="rNP-bu-tNs" id="Z98-b9-Gi3"/>
+                        <outlet property="sideSegControl" destination="FZZ-0o-6nG" id="ADD-HZ-bAT"/>
                         <outlet property="updateButtonFrame" destination="uMF-sK-CjI" id="aYQ-h6-TfF"/>
                     </connections>
                 </viewController>
@@ -845,7 +861,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is broken?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16f-Hm-uwo">
-                                <rect key="frame" x="15" y="150" width="227" height="42"/>
+                                <rect key="frame" x="15" y="150" width="344" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
                                 <color key="textColor" red="0.42370863060000002" green="0.405097757" blue="0.64946859140000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -860,7 +876,7 @@
                                 </segments>
                                 <connections>
                                     <action selector="brokenSegChanged:" destination="vMI-xr-Mxi" eventType="valueChanged" id="afn-AH-Ggo"/>
-                                    <action selector="onBrokenChanged:" destination="whk-wA-Tzx" eventType="valueChanged" id="Knf-n0-QKA"/>
+                                    <action selector="onBrokenChanged:" destination="whk-wA-Tzx" eventType="valueChanged" id="ds0-5T-JuC"/>
                                 </connections>
                             </segmentedControl>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lOK-Pg-EXS">
@@ -964,6 +980,7 @@
                     </view>
                     <connections>
                         <outlet property="brokenSegControl" destination="oYV-IN-Tgb" id="WXM-IS-Fvq"/>
+                        <outlet property="brokenText" destination="16f-Hm-uwo" id="YBj-2s-z5c"/>
                         <outlet property="elevatorSegControl" destination="kVL-07-LpP" id="YgT-bA-bTX"/>
                         <outlet property="elevatorView" destination="K6g-Tm-r5V" id="bG5-vJ-rPx"/>
                         <outlet property="floorField" destination="4ZY-4i-KDJ" id="vf4-Bs-7We"/>
@@ -1592,7 +1609,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is broken?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDd-6R-eZF">
-                                <rect key="frame" x="15" y="160" width="227" height="42"/>
+                                <rect key="frame" x="15" y="160" width="353" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
                                 <color key="textColor" red="0.42370863060000002" green="0.405097757" blue="0.64946859140000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1706,6 +1723,7 @@
                     </view>
                     <connections>
                         <outlet property="brokenSegControl" destination="4CC-Ks-rWu" id="pW0-II-KSc"/>
+                        <outlet property="brokenText" destination="RDd-6R-eZF" id="0I5-ir-XgJ"/>
                         <outlet property="directionSegControl" destination="35w-Fg-v6s" id="5Wz-Ay-LHk"/>
                         <outlet property="directionView" destination="GXm-Hm-zxH" id="2Qr-0e-iBy"/>
                         <outlet property="floorField" destination="aP7-0B-TUc" id="ZTf-x7-WY8"/>
@@ -1757,11 +1775,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bathroom_icon" width="150" height="150"/>
+        <image name="bathroom_icon" width="200" height="200"/>
         <image name="elevator_icon" width="500" height="500"/>
         <image name="escalator_icon" width="74" height="69"/>
-        <image name="escalator_icon_down" width="51.200000762939453" height="51.200000762939453"/>
-        <image name="escalator_icon_up" width="51.200000762939453" height="51.200000762939453"/>
+        <image name="escalator_icon_down" width="64" height="64"/>
+        <image name="escalator_icon_up" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="seM-sh-cZc"/>
