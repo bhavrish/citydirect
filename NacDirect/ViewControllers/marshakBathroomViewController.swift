@@ -56,6 +56,7 @@ class marshakBathroomViewController: UIViewController {
             else {
                 print(error)
             }
+            
             setColors()
         }
         

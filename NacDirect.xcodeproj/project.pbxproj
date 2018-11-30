@@ -16,7 +16,6 @@
 		4522F50E219E26D40059138C /* NacDirectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522F50D219E26D40059138C /* NacDirectTests.swift */; };
 		4522F519219E26D40059138C /* NacDirectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522F518219E26D40059138C /* NacDirectUITests.swift */; };
 		4532060121A473CA00358AFF /* escalatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4532060021A473CA00358AFF /* escalatorViewController.swift */; };
-		4532060721A4F39A00358AFF /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4532060621A4F39A00358AFF /* AdminViewController.swift */; };
 		45D79A9821A351BC001CAAF8 /* updateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D79A9721A351BC001CAAF8 /* updateViewController.swift */; };
 		45FDD56321A8C72000431935 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDD56221A8C72000431935 /* MainPageViewController.swift */; };
 		45FDD56621AA1E0000431935 /* groveHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDD56521AA1E0000431935 /* groveHomePageViewController.swift */; };
@@ -72,7 +71,6 @@
 		4522F518219E26D40059138C /* NacDirectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NacDirectUITests.swift; sourceTree = "<group>"; };
 		4522F51A219E26D40059138C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4532060021A473CA00358AFF /* escalatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = escalatorViewController.swift; sourceTree = "<group>"; };
-		4532060621A4F39A00358AFF /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		45D79A9721A351BC001CAAF8 /* updateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateViewController.swift; sourceTree = "<group>"; };
 		45FDD56221A8C72000431935 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		45FDD56521AA1E0000431935 /* groveHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groveHomePageViewController.swift; sourceTree = "<group>"; };
@@ -227,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				E587CCA6219FD1B900733593 /* LoginViewController.swift */,
-				4532060621A4F39A00358AFF /* AdminViewController.swift */,
 				E5F181B5219FF38C00B05A48 /* SignUpViewController.swift */,
 				4979F02721A0BA62001C5039 /* HomePageViewController.swift */,
 				4532060021A473CA00358AFF /* escalatorViewController.swift */,
@@ -479,7 +476,6 @@
 				45FDD57021AA211100431935 /* marshakHomePageViewController.swift in Sources */,
 				4532060121A473CA00358AFF /* escalatorViewController.swift in Sources */,
 				4979F02821A0BA62001C5039 /* HomePageViewController.swift in Sources */,
-				4532060721A4F39A00358AFF /* AdminViewController.swift in Sources */,
 				4522F4F9219E26D30059138C /* AppDelegate.swift in Sources */,
 				E5FA039B21ACEED1000A0F37 /* MarshakFloorCell.swift in Sources */,
 				45FDD56C21AA1E8300431935 /* groveBathroomViewController.swift in Sources */,
