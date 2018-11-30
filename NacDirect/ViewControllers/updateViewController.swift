@@ -23,10 +23,14 @@ class updateViewController: UIViewController {
     @IBOutlet weak var genderSegControl: UISegmentedControl!
     
     @IBOutlet weak var updateButtonFrame: UIView!
+    @IBOutlet weak var brokenText: UILabel!
     
     var counter = 0
     
     override func viewDidLoad() {
+        if PFUser.current()?.username as? String == "admin" {
+            brokenText.text = "What has been fixed?"
+        }
         super.viewDidLoad()
         genderView.isHidden = true
         
@@ -56,35 +60,62 @@ class updateViewController: UIViewController {
         let dir = directionArr[directionSegControl.selectedSegmentIndex]
         let gend = genderArr[genderSegControl.selectedSegmentIndex]
         
-        var updates = PFObject(className: "Updates")
-        updates["building"] = "nac"
-        updates["floor_number"] = floornumber
-        updates["uploader"] = PFUser.current()
-        updates["object"] = obj
-        updates["side"] = side
-        
-        if genderView.isHidden == true {
-            updates["direction"] = dir
-        }
-        else if directionView.isHidden == true {
-            updates["gender"] = gend
-        }
-        updates.saveInBackground(block: {(success: Bool, error: Error?) -> Void in
-            if error == nil {
-                DispatchQueue.main.async {
-                    sleep(1)
-                    
-                    // show completion indicator
-                    hud.mode = .customView
-                    hud.label.text = "Updated"
-                    hud.customView = UIImageView(image: #imageLiteral(resourceName: "Checkmark"))
-                    hud.hide(animated:true, afterDelay: 1)
+        if PFUser.current()?.username as? String == "admin" { // if user is admin, delete posts
+            let query = PFQuery(className: "Updates")
+            query.order(byDescending: "createdAt")
+            query.findObjectsInBackground { (posts, error) in
+                if error == nil {
+                    for post in posts! {
+                        if self.genderView.isHidden == true { // if escalator has been fixed
+                            if post["building"] as? String == "nac" && post["floor_number"] as? String == floornumber && post["side"] as? String == side && post["direction"] as? String == dir {
+                                post.deleteInBackground()
+                            }
+                        }
+                        else { // if bathroom has been fixed
+                            if post["building"] as? String == "nac" && post["floor_number"] as? String == floornumber && post["side"] as? String == side && post["gender"] as? String == gend {
+                                post.deleteInBackground()
+                            }
+                        }
+                    }
+                }
+                else {
+                    print(error)
                 }
             }
-            else {
-                print(error)
+        }
+        else { // if user is regular person, update database
+            var updates = PFObject(className: "Updates")
+            updates["building"] = "nac"
+            updates["floor_number"] = floornumber
+            updates["uploader"] = PFUser.current()
+            updates["object"] = obj
+            updates["side"] = side
+            
+            if genderView.isHidden == true {
+                updates["direction"] = dir
             }
-        })
+            else if directionView.isHidden == true {
+                updates["gender"] = gend
+            }
+            
+            updates.saveInBackground(block: {(success: Bool, error: Error?) -> Void in
+                if error == nil {
+                    DispatchQueue.main.async {
+                        sleep(1)
+                        
+                        // show completion indicator
+                        hud.mode = .customView
+                        hud.label.text = "Updated"
+                        hud.customView = UIImageView(image: #imageLiteral(resourceName: "Checkmark"))
+                        hud.hide(animated:true, afterDelay: 1)
+                    }
+                }
+                else {
+                    print(error)
+                }
+            })
+        }
+    
     }
     
     
