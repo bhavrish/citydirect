@@ -21,6 +21,12 @@ class MainPageViewController: UIViewController {
     @IBOutlet weak var groveImage: UIImageView!
     @IBOutlet weak var marshakImage: UIImageView!
     
+    
+    @IBOutlet weak var nacMiniView: UIView!
+    @IBOutlet weak var marshakMiniView: UIView!
+    @IBOutlet weak var groveMiniView: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setBlur()
@@ -29,6 +35,7 @@ class MainPageViewController: UIViewController {
         setNacImage()
         setGroveImage()
         setMarshakImage()
+        setMiniViews()
         
         if PFUser.current()?.username == "admin" {
             navBar.title = "Admin"
@@ -113,6 +120,12 @@ class MainPageViewController: UIViewController {
         blurEffectView.frame = view.bounds
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.view.insertSubview(blurEffectView, at:0)
+    }
+    
+    func setMiniViews() {
+        nacMiniView.layer.cornerRadius = 8.0;
+        groveMiniView.layer.cornerRadius = 8.0;
+        marshakMiniView.layer.cornerRadius = 8.0;
     }
     
     

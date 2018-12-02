@@ -1134,12 +1134,17 @@
                                 <rect key="frame" x="8" y="99" width="359" height="191"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ZF-VG-9RF">
+                                        <rect key="frame" x="126" y="64" width="107" height="62"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eek-0i-TOD">
-                                        <rect key="frame" x="15" y="22" width="344" height="159"/>
+                                        <rect key="frame" x="7" y="16" width="344" height="159"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
                                         <state key="normal" title="NAC">
-                                            <color key="titleColor" red="0.0" green="0.83137254901960778" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="titleColor" red="0.0" green="0.556081374796908" blue="0.66870241116751261" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
                                             <action selector="onNAC:" destination="pJn-xN-0Tb" eventType="touchUpInside" id="bGS-WA-aNP"/>
@@ -1156,12 +1161,17 @@
                                 <rect key="frame" x="8" y="576" width="359" height="191"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xDL-LA-fBH">
+                                        <rect key="frame" x="83" y="64" width="192" height="62"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUN-pw-OEw">
-                                        <rect key="frame" x="15" y="22" width="344" height="159"/>
+                                        <rect key="frame" x="7" y="16" width="344" height="159"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
                                         <state key="normal" title="Marshak">
-                                            <color key="titleColor" red="0.45098039215686275" green="0.98039215686274506" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.29548041840420752" green="0.48065565473537153" blue="0.26714067040244355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
                                             <action selector="onMarshak:" destination="pJn-xN-0Tb" eventType="touchUpInside" id="U6e-5x-PGN"/>
@@ -1178,12 +1188,17 @@
                                 <rect key="frame" x="8" y="332" width="359" height="191"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O9J-K9-rHo">
+                                        <rect key="frame" x="117" y="64" width="125" height="62"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWr-CG-264">
-                                        <rect key="frame" x="15" y="21" width="344" height="159"/>
+                                        <rect key="frame" x="8" y="16" width="344" height="159"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
                                         <state key="normal" title="Grove">
-                                            <color key="titleColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.48715454779713707" green="0.48480114418459053" blue="0.48950795140968362" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
                                             <action selector="onGrove:" destination="pJn-xN-0Tb" eventType="touchUpInside" id="c05-c8-gEK"/>
@@ -1203,10 +1218,13 @@
                     <navigationItem key="navigationItem" id="8wa-gp-vmt"/>
                     <connections>
                         <outlet property="groveImage" destination="ETB-BH-mIy" id="iOO-tY-Bsa"/>
+                        <outlet property="groveMiniView" destination="O9J-K9-rHo" id="hT3-cZ-oxr"/>
                         <outlet property="groveView" destination="PvP-Dq-FbI" id="SVh-rA-igc"/>
                         <outlet property="marshakImage" destination="WSN-bA-2iH" id="4WF-WR-fvJ"/>
+                        <outlet property="marshakMiniView" destination="xDL-LA-fBH" id="tOR-Id-Vim"/>
                         <outlet property="marshakView" destination="RGR-f0-Eo7" id="B0K-EN-QTe"/>
                         <outlet property="nacImage" destination="6Yr-Wo-qlu" id="5OG-p7-kW7"/>
+                        <outlet property="nacMiniView" destination="1ZF-VG-9RF" id="rAq-Ga-udi"/>
                         <outlet property="nacView" destination="AVj-Sb-HPm" id="2jW-kP-iwR"/>
                         <outlet property="navBar" destination="8wa-gp-vmt" id="OZL-fL-iUf"/>
                         <segue destination="cij-Fm-q1e" kind="show" identifier="homePageSegue" id="Mzk-7s-Yda"/>
