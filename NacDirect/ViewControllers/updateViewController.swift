@@ -77,10 +77,17 @@ class updateViewController: UIViewController {
                             }
                         }
                     }
+                    DispatchQueue.main.async {
+                        hud.mode = .customView
+                        hud.label.text = "Updated!"
+                        hud.customView = UIImageView(image: #imageLiteral(resourceName: "Checkmark"))
+                        hud.hide(animated:true, afterDelay: 1)
+                    }
                 }
                 else {
                     print(error)
                 }
+                
             }
         }
         else { // if user is regular person, update database
@@ -105,7 +112,7 @@ class updateViewController: UIViewController {
                         
                         // show completion indicator
                         hud.mode = .customView
-                        hud.label.text = "Updated"
+                        hud.label.text = "Submitted!"
                         hud.customView = UIImageView(image: #imageLiteral(resourceName: "Checkmark"))
                         hud.hide(animated:true, afterDelay: 1)
                     }

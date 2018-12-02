@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import MBProgressHUD
 
 class SignUpViewController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
@@ -32,6 +33,9 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func onRegister(_ sender: Any) {
+        let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
+        hud.mode = .indeterminate
+        
         // initializes a new Parse user object
         let newUser = PFUser()
         
@@ -45,6 +49,7 @@ class SignUpViewController: UIViewController {
                 print(error.localizedDescription)
             } else {
                 print("User created")
+                
                 self.performSegue(withIdentifier: "mainSegue2", sender: nil)
             }
             

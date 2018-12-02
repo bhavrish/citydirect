@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import MBProgressHUD
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
@@ -41,14 +42,28 @@ class LoginViewController: UIViewController {
     }
     
     
+    
     @IBAction func onLogIn(_ sender: Any) {
+        // add loading indicator
+        let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
+        hud.mode = .indeterminate
+        
         let username = usernameField.text ?? "" // provides default value of empty string if no username / password
         let password = passwordField.text ?? ""
         PFUser.logInWithUsername(inBackground: username, password: password) { (user: PFUser?, error: Error?) in
             if let error = error {
                 print("User log in failed: \(error.localizedDescription)")
+                DispatchQueue.main.async {
+                    hud.mode = .customView
+                    hud.label.text = "Incorrect username/password"
+                    hud.customView = UIImageView(image: #imageLiteral(resourceName: "x_icon_small"))
+                    hud.hide(animated: true, afterDelay: 1)
+                }
             } else {
                 print("User logged in successfully")
+                DispatchQueue.main.async {
+                    hud.hide(animated:true)
+                }
                 self.performSegue(withIdentifier: "mainSegue", sender: nil)
             }
         }
