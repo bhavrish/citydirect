@@ -79,6 +79,12 @@
                                 }
                             }
                         }
+                        DispatchQueue.main.async {
+                            hud.mode = .customView
+                            hud.label.text = "Updated!"
+                            hud.customView = UIImageView(image: #imageLiteral(resourceName: "Checkmark"))
+                            hud.hide(animated:true, afterDelay: 1)
+                        }
                     }
                     else {
                         print(error)
@@ -104,9 +110,8 @@
                         DispatchQueue.main.async {
                             sleep(1)
                             
-                            // show completion indicator
                             hud.mode = .customView
-                            hud.label.text = "Updated"
+                            hud.label.text = "Submitted!"
                             hud.customView = UIImageView(image: #imageLiteral(resourceName: "Checkmark"))
                             hud.hide(animated:true, afterDelay: 1)
                         }
@@ -132,5 +137,4 @@
             }
         }
     }
-
 

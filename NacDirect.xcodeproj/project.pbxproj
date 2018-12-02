@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		2368813DE8ACCA330AE3DD8F /* Pods_NacDirectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 527F26B1837D5C3118AF5FEF /* Pods_NacDirectUITests.framework */; };
 		4522F4F9219E26D30059138C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522F4F8219E26D30059138C /* AppDelegate.swift */; };
-		4522F4FB219E26D40059138C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522F4FA219E26D40059138C /* ViewController.swift */; };
 		4522F4FE219E26D40059138C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4522F4FC219E26D40059138C /* Main.storyboard */; };
-		4522F500219E26D40059138C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4522F4FF219E26D40059138C /* Assets.xcassets */; };
 		4522F503219E26D40059138C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4522F501219E26D40059138C /* LaunchScreen.storyboard */; };
 		4522F50E219E26D40059138C /* NacDirectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522F50D219E26D40059138C /* NacDirectTests.swift */; };
 		4522F519219E26D40059138C /* NacDirectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522F518219E26D40059138C /* NacDirectUITests.swift */; };
@@ -32,6 +30,7 @@
 		53A7F416E74C0A31ED6D3725 /* Pods_NacDirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96B434B40B20FD1FE19E933 /* Pods_NacDirect.framework */; };
 		6E502103266003A5E8298844 /* Pods_NacDirectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8108CB35D3980A762C3D8A5 /* Pods_NacDirectTests.framework */; };
 		E534686C21A8A06A002772AD /* bathroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534686B21A8A06A002772AD /* bathroomViewController.swift */; };
+		E5862E5621B35CF1007A361A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5862E5521B35CF1007A361A /* Assets.xcassets */; };
 		E587CCA7219FD1B900733593 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E587CCA6219FD1B900733593 /* LoginViewController.swift */; };
 		E5F181B6219FF38C00B05A48 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F181B5219FF38C00B05A48 /* SignUpViewController.swift */; };
 		E5FA039B21ACEED1000A0F37 /* MarshakFloorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FA039A21ACEED1000A0F37 /* MarshakFloorCell.swift */; };
@@ -59,9 +58,7 @@
 		43B18A8AF99A3EA4662DB32E /* Pods-NacDirectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NacDirectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NacDirectTests/Pods-NacDirectTests.release.xcconfig"; sourceTree = "<group>"; };
 		4522F4F5219E26D30059138C /* NacDirect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NacDirect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4522F4F8219E26D30059138C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4522F4FA219E26D40059138C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4522F4FD219E26D40059138C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4522F4FF219E26D40059138C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4522F502219E26D40059138C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4522F504219E26D40059138C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4522F509219E26D40059138C /* NacDirectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NacDirectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +88,7 @@
 		A8108CB35D3980A762C3D8A5 /* Pods_NacDirectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NacDirectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D2E4794C97143EAEA41E5B /* Pods-NacDirectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NacDirectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NacDirectUITests/Pods-NacDirectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E534686B21A8A06A002772AD /* bathroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bathroomViewController.swift; sourceTree = "<group>"; };
+		E5862E5521B35CF1007A361A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E587CCA6219FD1B900733593 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E5F181B5219FF38C00B05A48 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E5FA039A21ACEED1000A0F37 /* MarshakFloorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarshakFloorCell.swift; sourceTree = "<group>"; };
@@ -154,9 +152,8 @@
 				4979F02921A0BA7C001C5039 /* TableViewCells */,
 				E5F181B2219FF29100B05A48 /* ViewControllers */,
 				4522F4F8219E26D30059138C /* AppDelegate.swift */,
-				4522F4FA219E26D40059138C /* ViewController.swift */,
+				E5862E5521B35CF1007A361A /* Assets.xcassets */,
 				4522F4FC219E26D40059138C /* Main.storyboard */,
-				4522F4FF219E26D40059138C /* Assets.xcassets */,
 				4522F501219E26D40059138C /* LaunchScreen.storyboard */,
 				4522F504219E26D40059138C /* Info.plist */,
 			);
@@ -352,7 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4522F503219E26D40059138C /* LaunchScreen.storyboard in Resources */,
-				4522F500219E26D40059138C /* Assets.xcassets in Resources */,
+				E5862E5621B35CF1007A361A /* Assets.xcassets in Resources */,
 				4522F4FE219E26D40059138C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,7 +461,6 @@
 				4979F02B21A0BAD3001C5039 /* FloorCell.swift in Sources */,
 				E587CCA7219FD1B900733593 /* LoginViewController.swift in Sources */,
 				45FDD57421AA213700431935 /* marshakBathroomViewController.swift in Sources */,
-				4522F4FB219E26D40059138C /* ViewController.swift in Sources */,
 				45FDD57221AA212500431935 /* marshakUpdateViewController.swift in Sources */,
 				E5F181B6219FF38C00B05A48 /* SignUpViewController.swift in Sources */,
 				45FDD57821AAF7DB00431935 /* GroveFloorCell.swift in Sources */,

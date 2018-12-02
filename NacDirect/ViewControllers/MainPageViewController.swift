@@ -7,11 +7,18 @@
 //
 
 import UIKit
+import Parse
 
 class MainPageViewController: UIViewController {
     
+    @IBOutlet weak var navBar: UINavigationItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if PFUser.current()?.username == "admin" {
+            navBar.title = "Admin"
+        }
         
         // Do any additional setup after loading the view.
     }
