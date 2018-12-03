@@ -31,6 +31,7 @@ class marshakUpdateViewController: UIViewController {
         
         if PFUser.current()?.username == "admin" {
             brokenText.text = "What has been fixed?"
+            brokenText.font = UIFont(name: brokenText.font.fontName, size: 30)
         }
         
         // hide these elements when elevator is selected
