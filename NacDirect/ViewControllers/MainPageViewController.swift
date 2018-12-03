@@ -26,6 +26,7 @@ class MainPageViewController: UIViewController {
     @IBOutlet weak var marshakMiniView: UIView!
     @IBOutlet weak var groveMiniView: UIView!
     
+    @IBOutlet weak var logoutButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +43,16 @@ class MainPageViewController: UIViewController {
         }
         
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func onLogout(_ sender: Any) {
+        PFUser.logOutInBackground { (error: Error?) in
+            if let error = error {
+                print(error.localizedDescription)
+            } else {
+                self.performSegue(withIdentifier: "logoutSegue", sender: nil)
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
