@@ -30,6 +30,7 @@ class updateViewController: UIViewController {
     override func viewDidLoad() {
         if PFUser.current()?.username as? String == "admin" {
             brokenText.text = "What has been fixed?"
+            brokenText.font = UIFont(name: brokenText.font.fontName, size: 30)
         }
         super.viewDidLoad()
         genderView.isHidden = true
